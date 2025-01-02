@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/planthostel
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show-sql: true
+        format_sql: true
+  jwt:
+    secret: UGxhbnRIb3N0ZWxKd3RTZWNyZXRLZXk=
+
+logging:
+  level:
+    root: info
